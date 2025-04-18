@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex font-sans">
+  <!-- Left Side -->
+  <div class="w-1/2 bg-gray-100 flex items-center justify-center">
+    <img src="https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg?t=st=1744942815~exp=1744946415~hmac=e7ff6ba5523f8d78b40eac66be149eba2c5cb6283f017e91ec7d223a0cba8b17&w=826" alt="Illustration" class="w-120">
+  </div>
+
+  <!-- Right Side -->
+  <div class="w-1/2 flex flex-col justify-center items-center p-8">
+    <div class="max-w-md w-full space-y-6">
+      <div class="flex justify-center">
+        <span class="text-3xl">★</span>
+      </div>
+      <h2 class="text-2xl font-bold text-center">Welcome back!</h2>
+      <p class="text-center text-gray-500">Please enter your details</p>
+      <form class="space-y-4">
+        <input type="email" placeholder="Email" class="w-full border-b p-2 focus:outline-none" />
+        <div class="relative">
+          <input type="password" placeholder="Password" class="w-full border-b p-2 pr-10 focus:outline-none" />
+          <span class="absolute right-2 top-2.5 text-gray-400">👁️</span>
+        </div>
+        <div class="flex items-center justify-between text-sm text-gray-500">
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2">Remember for 30 days
+          </label>
+          <a href="#" class="text-purple-600 hover:underline">Forgot password?</a>
+        </div>
+        <button class="w-full bg-black text-white rounded-full py-2 hover:bg-gray-800">Log In</button>
+        <button class="w-full border rounded-full py-2 flex items-center justify-center space-x-2 bg-gray-100">
+          <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5">
+          <span>Log In with Google</span>
+        </button>
+      </form>
+      <p class="text-center text-sm text-gray-500">
+        Don’t have an account? <a href="#" class="text-purple-600 hover:underline">Sign Up</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
